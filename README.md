@@ -7,6 +7,7 @@ VueFormGenerator is a schema-based form generator component for [Vue.js](https:/
 ## Demo
 
 [JSFiddle simple example](https://jsfiddle.net/zoul0813/d8excp36/)
+
 [CodePen simple example](https://codepen.io/zoul0813/pen/OrNVNw)
 
 ## Features
