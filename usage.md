@@ -19,6 +19,12 @@ import VueFormGenerator from "vue-form-generator";
 
 Vue.use(VueFormGenerator);
 
+/* optional custom validators treated as "built-in"
+Vue.use(VueFormGenerator, {
+  validators: objectWithCustomValidatorFunctions  
+});
+*/
+
 export default {
   data () {
     return {

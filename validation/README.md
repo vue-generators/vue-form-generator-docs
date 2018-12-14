@@ -115,7 +115,39 @@ or function names:
 
 ## Custom Validators
 
-You can create custom validators, which are just functions that take `value`, `field`, `model` parameters - and return either an array of errors, or an empty array if validation succeeds. [Full details on creating custom validators can be found here](custom-validators.md).
+You can create custom validators, which are functions that take `value`, `field`, `model` parameters - and return either an array of errors, or an empty array if validation succeeds. [Full details on creating custom validators can be found here](custom-validators.md).
+
+If your custom validators are attached to a single object, you can pass this object to `Vue.use()` when setting up VFG in your project.  This will take each function in the object passed and attach it to the list of built-in validators.  This allows you to reference your custom validators as "name strings" (convenient for JSON schemas retrieved remotely).
+
+### Example of Custom Validators being Installed
+
+```js
+import VueFormGenerator from "vue-form-generator";
+Vue.use(VueFormGenerator, {
+    validators: {
+        firstCustomValidator: (value, field, model) => {
+            return [];
+        },
+        secondCustomValidator: (value, field, model) => {
+            return [];
+        },
+        alwaysInvalid: (value, field, model) => {
+            return ['I am always invalid'];
+        }
+    }
+});
+```
+
+You can then reference these in your field schema by their name:
+
+```
+{
+    type: "input",
+    inputType: "text",
+    model: "model",
+    validator: ["firstCustomValidator", "secondCustomValidator", "alwaysInvalid"]
+}
+```
 
 ## Handling Validation Events
 
