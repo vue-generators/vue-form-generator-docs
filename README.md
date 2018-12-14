@@ -27,7 +27,7 @@ VueFormGenerator is a schema-based form generator component for [Vue.js](https:/
 
 ## More fields `*new*`
 
-VueFormGenerator support custom fields.  
+VueFormGenerator supports custom fields.  
 If you decide to release your custom field into the wild, please [open a new issue](https://github.com/vue-generators/vue-form-generator/issues) so we can add you to a list here!  
 Please try to use this naming convention for your custom field : `vfg-field-*`  
 Example :
@@ -36,7 +36,7 @@ Example :
 * `vfg-field-calendar`
 * `vfg-field-awesome-dropdown`
 
-This way, it will be easier for everyone to find it. Thank you !
+This way, it will be easier for everyone to find it. Thank you!
 
 ## License
 
