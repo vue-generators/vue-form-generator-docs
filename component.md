@@ -13,7 +13,7 @@
     | [options](options.md) | `Object` | `{`<br/>`validateAfterLoad: false,`<br/>`validateAsync: false,`<br/>`validateAfterChanged: false,`<br/>`    validationErrorClass: "error",`<br/>`validationSuccessClass: ""`<br/>`}` | Options for the VueFormComponent |
 | multiple | `Boolean` | `false` | If true, we only show `multi: true` fields |
 | isNewModel | `Boolean` | `false` | If true, we won't run validation after load |
-| tag | `String` | "fieldset" | Change the main HTML element of VueFormGenerator |
+| tag | `String` | "fieldset" | Change the main HTML element wrapper for Fields and Groups |
 
 
 
