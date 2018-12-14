@@ -11,6 +11,7 @@ You can also add buttons to fields.
 | classes | _none_ | `String` | CSS classes for the button |
 | label | _none_ | `String` | Caption of the button |
 | onclick | _none_ | `Function(model, field)` | Triggered when click on the button |
+| type | "button" | `String` | The HTML "type" attribute for the button, defaults to "button" |
 
 ## Example
 
@@ -42,6 +43,7 @@ The below example uses two buttons to read the location of the user and clear th
       {
           classes: "btn-clear",
           label: "Clear",
+          type: "reset"
           onclick: function(model, field) {
               model.address.geo = {
                   lat: 0,
