@@ -10,23 +10,23 @@ $ npm install vue-form-generator
 
 ### Manual
 
-Download zip package and unpack and add the `vfg.css` and `vfg.js` file to your project from dist folder.
+Download zip package, unpack and add the `vfg.css` and `vfg.js` file to your project from `/dist` folder.
 
 ```
-https://github.com/icebob/vue-form-generator/archive/master.zip
+https://github.com/vue-generators/vue-form-generator/releases/latest
 ```
 
 ### Core vs Full version
 
-VueFormGenerator come in two version : core and full.  
-Core is a more minimal version with only half the fields.  
+VueFormGenerator comes in two versions: core and full.  
+Core is a minimal version with only half the fields.  
 Full is core + other fields.
 
-* Full bundle: 75 kB (gzipped: 19 kB)
-* Core bundle: 39 kB (gzipped: 11 kB)
+* Full bundle: 169 kB (gzipped: 50 kB)
+* Core bundle: 143 kB (gzipped: 45 kB)
 
-If you don't know what to choose, don't worry, the full is the default version.  
-If you want the slim down version, here is the changes:
+If you don't know what to choose, don't worry, full is the default version.  
+If you want the slimmed down version, here are the changes:
 
 ```js
 // the "core" way
@@ -38,10 +38,10 @@ If you want the slim down version, here is the changes:
 
 ### Dependencies
 
-VueFormGenerator use [fecha](https://github.com/taylorhakes/fecha) and [lodash](https://lodash.com/) internally.
+VueFormGenerator uses [fecha](https://github.com/taylorhakes/fecha) and [lodash](https://lodash.com/) internally.
 
-While core fields don't need external dependencies, optional fields may need other libraries.  
-These dependency fall in two camp: jQuery or Vanilla. You can find almost the same functionality in both flavor.  
+While core fields don't need external dependencies, optional fields in the full package may need additional libraries.  
+These dependencies fall into two camps: jQuery or Vanilla. You can find almost the same functionality in both flavors.
 That way, it's your choice to depend on jQuery or not.
 
 | Field type | jQuery | Vanilla |
