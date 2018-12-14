@@ -15,7 +15,7 @@
 | multi | `false` | `Boolean` | if `true`, it will visible only  if `multiple` is `true` in component attributes |
 | default | _none_ | any | Default value of the field \(use when create a new model\) |
 | hint | _none_ | `String` | show this hint below the field |
-| inputName | _none_ | `String` | set `name` attribute to `input` field. You can use it to generate normal HTML Forms and submit the field values to server-side. [Example](https://github.com/icebob/vue-form-generator/tree/master/examples/post-form) |
+| inputName | _none_ | `String` | set `name` attribute to `input` field. You can use it to generate normal HTML Forms and submit the field values to server-side. [Example](https://github.com/vue-generators/vue-form-generator/tree/master/examples/post-form) |
 | help | _none_ | `String` | show this help if mouse hover the question icon before the caption of field. _You can use HTML elements too._ |
 | validator | _none_ | `Function` or `Array` | Validator for value. It can be an array of functions too. |
 | styleClasses | _none_ | `String` or `Array` | custom css style classes. It will be appended to the `.from-group` |

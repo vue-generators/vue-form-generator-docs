@@ -4,7 +4,7 @@ A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS
 
 > Please note, this field depend on the following library:
 - [Pikaday](https://github.com/dbushell/Pikaday)
-- [Moment.js](http://momentjs.com/) (see [issue #59](https://github.com/icebob/vue-form-generator/issues/59))
+- [Moment.js](http://momentjs.com/) (see [issue #59](https://github.com/vue-generators/vue-form-generator/issues/59))
 
 ## Special properties of field
 
