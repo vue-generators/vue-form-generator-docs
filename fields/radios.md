@@ -93,5 +93,6 @@ If `disabled` is set to a function, it will be passed a reference to the `model`
 }
 ```
 
+## Styling
 
-
+The `is-checked` and `is-disabled` CSS classes are attached to the radio options `<label />` element when applicable.
