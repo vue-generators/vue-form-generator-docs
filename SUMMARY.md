@@ -4,7 +4,9 @@
   * [Installation](installation.md)
   * [Usage](usage.md)
 * [Component](component.md)
-* [Schema](schema.md)
+  * [Schema](schema.md)
+  * [Model](model.md)
+  * [Options](options.md)
 * [Fields](fields/README.md)
   * [Field properties](fields/field_properties.md)
     * [Inside buttons](fields/inside_buttons.md)
@@ -37,6 +39,5 @@
   * [Built in Validators](validation/built-in-validators.md)
   * [Custom Validators](validation/custom-validators.md)
   * [Handling Validation Events](validation/validation-events.md)
-* [Model](model.md)
-* [Options](options.md)
+
 
