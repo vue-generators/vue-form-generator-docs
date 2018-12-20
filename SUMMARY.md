@@ -3,6 +3,7 @@
 * [Getting Started](README.md)
   * [Installation](installation.md)
   * [Usage](usage.md)
+    * [Styling](styling.md)
 * [Component](component.md)
   * [Schema](schema.md)
   * [Model](model.md)
