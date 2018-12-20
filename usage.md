@@ -105,7 +105,7 @@ export default {
       formOptions: {
         validateAfterLoad: true,
         validateAfterChanged: true,
-        fieldIdPrefix: 'user-'
+        validateAsync: true
       }
     }
   }
