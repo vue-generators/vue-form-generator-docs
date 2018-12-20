@@ -4,7 +4,7 @@ This is a select list field for multiple selection.
 > Please note, this field depend on the following library:
 - [jQuery](http://www.jquery.com)
 - [BootStrap](http://getbootstrap.com/)
-- [bootstrap-select](https://silviomoreto.github.io/bootstrap-select/)
+- [bootstrap-select](https://silviomoreto.github.io/bootstrap-select/) ([github](https://github.com/snapappointments/bootstrap-select/))
 
 ## Special properties of field
 

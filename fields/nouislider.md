@@ -3,7 +3,7 @@
 Lightweight JavaScript range slider.
 
 > Please note, this field depend on the following library:
-- [noUiSlider](http://refreshless.com/nouislider/)
+- [noUiSlider](http://refreshless.com/nouislider/) ([github](https://github.com/leongersen/noUiSlider/))
 
 ## Special properties of field
 

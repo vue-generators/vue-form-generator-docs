@@ -3,7 +3,7 @@
 Format input text content when you are typing.
 
 > Please note, this field depend on the following library:
-- [cleave.js](https://nosir.github.io/cleave.js/)
+- [cleave.js](https://nosir.github.io/cleave.js/) ([github](https://github.com/nosir/cleave.js))
 - [cleave.js phone lib (optional)](https://github.com/nosir/cleave.js/blob/master/doc/phone-lib-addon.md)
 
 ## Special properties of field
