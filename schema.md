@@ -1,6 +1,6 @@
 # Schema
 
-The schema contains the fields of the form, optionally in groups.
+The schema contains the [fields](fields/README.md) of the form, optionally in groups.
 
 ## Examples
 
