@@ -1,3 +1,8 @@
+> **[danger] DEPRECATION WARNING**
+>
+> The Masked Input Plugin this component is based on is no longer in active development.  This field will be removed in v3.
+
+
 # Masked input field
 This is a masked input field for formatted string values. (e.g. phone number, zip code, card numbers...etc)
 
