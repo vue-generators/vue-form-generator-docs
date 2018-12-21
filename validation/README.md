@@ -115,7 +115,9 @@ or function names:
 
 ## Custom Validators
 
-You can create custom validators, which are functions that take `value`, `field`, `model` parameters - and return either an array of errors, or an empty array if validation succeeds. [Full details on creating custom validators can be found here](custom-validators.md).
+You can create custom validators, which are functions that take `value`, `field`, `model` parameters - and return either an array of errors, or an empty array if validation succeeds. 
+
+[Full details on creating custom validators can be found here](custom-validators.md).
 
 If your custom validators are attached to a single object, you can pass this object to `Vue.use()` when setting up VFG in your project.  This will take each function in the object passed and attach it to the list of built-in validators.  This allows you to reference your custom validators as "name strings" (convenient for JSON schemas retrieved remotely).
 
@@ -152,3 +154,11 @@ You can then reference these in your field schema by their name:
 ## Handling Validation Events
 
 The `vue-form-generator` component emits a validated event, if validation is executed. The event parameters are: `isValid: boolean, errors: Array`. [Full details of handling validation events](validation-events.md).
+
+## Debounced Validation
+
+If you set the `validateDebounceTime` [option](component/options) to a positive integer, then all validation will be delayed by this amount of time in milliseconds.
+
+This is useful if you want to delay the display of validation errors.  You may want to do this on text fields with minimum character requirements so the user does not see "The length of text is too small!" errors as they are typing.
+
+**NOTE**: This option affects all fields within the schema, if you would like to debounce only a specific field or fields, you can use the `validateDebounceTime` [field property](fields/field_properties) instead.
