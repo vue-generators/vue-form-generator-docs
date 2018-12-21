@@ -157,8 +157,8 @@ The `vue-form-generator` component emits a validated event, if validation is exe
 
 ## Debounced Validation
 
-If you set the `validateDebounceTime` [option](component/options) to a positive integer, then all validation will be delayed by this amount of time in milliseconds.
+If you set the `validateDebounceTime` [option](options.md) to a positive integer, then all validation will be delayed by this amount of time in milliseconds.
 
 This is useful if you want to delay the display of validation errors.  You may want to do this on text fields with minimum character requirements so the user does not see "The length of text is too small!" errors as they are typing.
 
-**NOTE**: This option affects all fields within the schema, if you would like to debounce only a specific field or fields, you can use the `validateDebounceTime` [field property](fields/field_properties) instead.
+**NOTE**: This option affects all fields within the schema, if you would like to debounce only a specific field or fields, you can use the `validateDebounceTime` [field property](fields/field_properties.md) instead.

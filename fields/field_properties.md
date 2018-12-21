@@ -17,8 +17,8 @@
 | default | _none_ | any | Default value of the field \(used when creating a new model\) |
 | hint | _none_ | `String` | show this hint below the field |
 | help | _none_ | `String` | show this help if mouse hover the question icon before the caption of field. _You can use HTML elements too._ |
-| [validator](validation) | _none_ | `Function` or `Array` | Validator for value. It can be an array of functions too. |
-| [validateDebounceTime](validation#debounced-validation) | _none_ | Amount of time in milliseconds validation waits before checking, refer to [validation](validation#debounce)
+| [validator](validation/README.md) | _none_ | `Function` or `Array` | Validator for value. It can be an array of functions too. |
+| [validateDebounceTime](validation/README.md#debounced-validation) | _none_ | Amount of time in milliseconds validation waits before checking, refer to [validation](validation/README.md#debounce)
 | styleClasses | _none_ | `String` or `Array` | custom css style classes. They will be appended to the `.from-group` |
 | [buttons](inside_buttons.md) | _none_ | `Array` | Array of button objects. This is useful if you need some helper function to fill the field. _\(E.g. generate password, get GPS location..etc\)\*_ |
 
