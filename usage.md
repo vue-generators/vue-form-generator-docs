@@ -87,8 +87,8 @@ export default {
             fields: [
               {
                 type: 'select',
-                label: 'skills',
-                model: 'type',
+                label: 'Skills',
+                model: 'skills',
                 values: ['Javascript', 'VueJS', 'CSS3', 'HTML5']
               },
               {
