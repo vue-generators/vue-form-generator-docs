@@ -8,18 +8,18 @@
 | label | _none_ | `String` | Label of field |
 | model | _none_ | `String` | Name of property in the model |
 | id | _auto-generated_ | `String` | `id` of the field. If not set, will be auto-generated from the slugified version of either: `schema.inputName`, `schema.label` or `schema.model`, in that order. If the [`fieldIdPrefix` option](options.md) is set, it's value will be prepended to both manual & auto-generated ids. |
+| inputName | _none_ | `String` | set `name` attribute to `input` field. You can use it to generate normal HTML Forms and submit the field values to server-side. [Example](https://github.com/vue-generators/vue-form-generator/tree/master/examples/post-form) |
 | featured | `false` | `Boolean` | is it a featured \(bold\) field? It can be a function too. |
 | visible | `true` | `Boolean` | if `false`, field will be hidden. It can be a function too. |
 | disabled | `false` | `Boolean` | if `true`, field will be disabled. It can be a function too. |
 | required | `false` | `Boolean` | if `true`, must be fill this field \(need to use validator\). |
-| multi | `false` | `Boolean` | if `true`, it will visible only  if `multiple` is `true` in component attributes |
-| default | _none_ | any | Default value of the field \(use when create a new model\) |
+| multi | `false` | `Boolean` | if `true`, it will be visible only  if `multiple` is `true` in component attributes |
+| default | _none_ | any | Default value of the field \(used when creating a new model\) |
 | hint | _none_ | `String` | show this hint below the field |
-| inputName | _none_ | `String` | set `name` attribute to `input` field. You can use it to generate normal HTML Forms and submit the field values to server-side. [Example](https://github.com/vue-generators/vue-form-generator/tree/master/examples/post-form) |
 | help | _none_ | `String` | show this help if mouse hover the question icon before the caption of field. _You can use HTML elements too._ |
-| validator | _none_ | `Function` or `Array` | Validator for value. It can be an array of functions too. |
+| [validator](validation) | _none_ | `Function` or `Array` | Validator for value. It can be an array of functions too. |
 | [validateDebounceTime](validation#debounced-validation) | _none_ | Amount of time in milliseconds validation waits before checking, refer to [validation](validation#debounce)
-| styleClasses | _none_ | `String` or `Array` | custom css style classes. It will be appended to the `.from-group` |
+| styleClasses | _none_ | `String` or `Array` | custom css style classes. They will be appended to the `.from-group` |
 | [buttons](inside_buttons.md) | _none_ | `Array` | Array of button objects. This is useful if you need some helper function to fill the field. _\(E.g. generate password, get GPS location..etc\)\*_ |
 
 ## Common methods of field
