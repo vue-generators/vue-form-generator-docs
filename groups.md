@@ -41,7 +41,7 @@ would produce (simplified) HTML output something like this:
 </fieldset>
 ```
 
-You can change the default `fieldset` tag by passing the `tag` property to the `<vue-form-genator />` component in your markup.
+You can change the default `fieldset` tag by passing the `tag` property to the `<vue-form-generator />` component in your markup.
 
 ```html
 <vue-form-generator tag="div" :model="model" :schema="schema" :options="options"></vue-form-generator>
