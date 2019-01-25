@@ -54,7 +54,7 @@ If you select the first item, the `value` will be `"Personal"` in the model.
         { id: "it", name: "Italic" },
         { id: "fr", name: "French" }
       ]
-    }),
+    },
     default: "en-US",
     validator: validators.required
 }
