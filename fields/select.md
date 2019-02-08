@@ -62,3 +62,20 @@ If you select the first item, the `value` will be `"Personal"` in the model.
 
 If you select the second item, the `value` will be `"en-US"` in the model.
 
+### Creating an \<optgroup\> with Select field:
+
+```js
+{
+    type: "select",
+    label: "Choose the fastest",
+    model: "the-fastest",
+    required: true,
+    values: values: [
+        { name: "Marc Marquez", id: "93", group: "MotoGP" },
+        { name: "Valentino Rossi", id: "46", group: "MotoGP" },
+        { name: "Lewis Hamilton", id: "44", group: "Formula 1" },
+        { name: "Sebastian Vettel", id: "5", group: "Formula 1" }
+    ],
+    validator: validators.required
+}
+```
