@@ -70,7 +70,7 @@ If you select the second item, the `value` will be `"en-US"` in the model.
     label: "Choose the fastest",
     model: "the-fastest",
     required: true,
-    values: values: [
+    values: [
         { name: "Marc Marquez", id: "93", group: "MotoGP" },
         { name: "Valentino Rossi", id: "46", group: "MotoGP" },
         { name: "Lewis Hamilton", id: "44", group: "Formula 1" },
