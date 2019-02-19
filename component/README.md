@@ -16,4 +16,9 @@
 | tag | `String` | "fieldset" | Change the main HTML element wrapper for Fields and Groups |
 
 
+## Events
 
+| Property | Type | Default | Description |
+| :--- | :--- | :--- | :--- |
+| [validated](events.md) | `[...args]` | `none` | Fired when the form has finished validating |
+| [model-updated](events.md) | `]...args]` | `none` | Fired when the model has been updated |

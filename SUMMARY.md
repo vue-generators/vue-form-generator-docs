@@ -4,7 +4,7 @@
   * [Installation](installation.md)
   * [Usage](usage.md)
     * [Styling](styling.md)
-* [Component](component.md)
+* [Component](component/README.md)
   * [Schema](schema.md)
   * [Model](model.md)
   * [Options](options.md)
