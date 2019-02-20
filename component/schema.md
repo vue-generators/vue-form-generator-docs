@@ -1,6 +1,6 @@
 # Schema
 
-The schema contains the [fields](fields/README.md) of the form, optionally in groups.
+The schema contains the [fields](/fields/README.md) of the form, optionally in groups.
 
 ## Examples
 
@@ -117,5 +117,5 @@ This form would have a text input for Name, followed by a fieldset for "User Det
 > **Note**: any ungrouped fields will be output first, followed by any groups.
 
 
-[Available field types](fields/README.md)
+[Available field types](/fields/README.md)
 

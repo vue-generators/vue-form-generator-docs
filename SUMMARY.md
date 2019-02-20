@@ -8,6 +8,7 @@
   * [Schema](component/schema.md)
   * [Model](component/model.md)
   * [Options](component/options.md)
+  * [Events](component/events.md)
 * [Fields](fields/README.md)
   * [Field Properties](fields/field_properties.md)
     * [Inside Buttons](fields/inside_buttons.md)
