@@ -112,5 +112,35 @@ For fields [select](select.md), [checklist](checklist.md), [selectEx](selectex.m
 }
 ```
 
+## Custom properties
 
+You can add custom properties, such as `data-attributes`, to fields by using an `attributes` object. To add properties to the input field itself, simply specify the attribute names and values in the model:
 
+```javascript
+{
+  type: "input",
+  inputType: "text",
+  model: "first_name",
+  label: "First Name",
+  attributes: {
+    "data-toggle": "collapse",
+    "title": "Some Tooltip Title"
+  }
+}
+```
+
+You can also specify the attributes of the surrounding wrapper and label:
+
+```javascript
+{
+  type: "input",
+  inputType: "text",
+  model: "first_name",
+  label: "First Name",
+  attributes: {
+    wrapper: { "data-toggle": "collapse" },
+    input: { "data-toggle": "tooltip", "title": "Some Tooltip to be displayed by Bootstrap Tooltips" },
+    label: { "custom-attr": "custom-value" }
+  }
+}
+```
