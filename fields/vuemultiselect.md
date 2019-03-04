@@ -4,7 +4,7 @@ Probably the most complete selecting solution for Vue.js, without jQuery.
 
 > Please note, this field depends on the following library:
 >
-> * [Vue-multiselect](http://monterail.github.io/vue-multiselect/)
+> * [Vue-multiselect](https://vue-multiselect.js.org/)
 
 ## Special properties of field
 
@@ -16,7 +16,7 @@ Probably the most complete selecting solution for Vue.js, without jQuery.
 
 ### `selectOptions`
 
-For more details, see the official [Vue-multiselect documentation](http://monterail.github.io/vue-multiselect/#props).
+For more details, see the official [Vue-multiselect documentation](https://vue-multiselect.js.org/#sub-props).
 
 | Property | Default | Accepted values | Description |
 | --- | --- | --- | --- |
@@ -285,7 +285,7 @@ For more details, see the official [Vue-multiselect documentation](http://monter
 
 ## CSS
 
-You have to include the vue-multiselect CSS somewhere. It can be added as a static asset to your application, or inside a component. See [here](http://monterail.github.io/vue-multiselect/) for details.
+You have to include the vue-multiselect CSS somewhere. It can be added as a static asset to your application, or inside a component. See [here](https://vue-multiselect.js.org/) for details.
 
 For example, to include in a component:
 
