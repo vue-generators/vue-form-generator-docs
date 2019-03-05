@@ -19,13 +19,13 @@ You can listen for this by attaching to the `@validated` (`v-validated`) event o
 
 ## model-updated
 
-This event is triggered whenever the the model attached to the form has been updated, usually due to user interaction.  It provides the new value and a reference to the field schema for the field which was just updated.  This event is triggered each time a field is updated.
+This event is triggered whenever the the model attached to the form has been updated, usually due to user interaction.  It provides the new value and a reference to the property name for the field which was just updated.  This event is triggered each time a field is updated.
 
 Internally, the event is triggered with
 ```js
 this.$emit("model-updated", newVal, schema);
 ```
 
-`newVal` is the value that was just updated, and `schema` is a reference to the individual [field schema](schema.md).  `schema` will only contain the individual field data, and not the full schema.  This allows you to identify which field was just updated.
+`newVal` is the value that was just updated, and `schema` is a reference to the model's property name found in the [field schema](schema.md).  `schema` will only contain the individual property name, and not the full schema.  This allows you to identify which field was just updated.
 
 You can listen for this by attaching to the `@model-updated` (`v-model-updated`) event on the `<vue-form-generator />` component.

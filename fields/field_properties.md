@@ -9,18 +9,19 @@
 | model | _none_ | `String` | Name of property in the model |
 | id | _auto-generated_ | `String` | `id` of the field. If not set, will be auto-generated from the slugified version of either: `schema.inputName`, `schema.label` or `schema.model`, in that order. If the [`fieldIdPrefix` option](/options.md) is set, it's value will be prepended to both manual & auto-generated ids. |
 | inputName | _none_ | `String` | set `name` attribute to `input` field. You can use it to generate normal HTML Forms and submit the field values to server-side. [Example](https://github.com/vue-generators/vue-form-generator/tree/master/examples/post-form) |
-| featured | `false` | `Boolean` | is it a featured \(bold\) field? It can be a function too. |
-| visible | `true` | `Boolean` | if `false`, field will be hidden. It can be a function too. |
-| disabled | `false` | `Boolean` | if `true`, field will be disabled. It can be a function too. |
-| required | `false` | `Boolean` | if `true`, must be fill this field \(need to use validator\). |
+| featured | `false` | `Boolean` | is it a featured \(bold\) field? Can be a function too. |
+| visible | `true` | `Boolean` | if `false`, field will be hidden. Can be a function too. |
+| disabled | `false` | `Boolean` | if `true`, field will be disabled. Can be a function too. |
+| required | `false` | `Boolean` | If `true`, Stylizes the field as required.  Works in conjunction with validators. |
 | multi | `false` | `Boolean` | if `true`, it will be visible only  if `multiple` is `true` in component attributes |
 | default | _none_ | any | Default value of the field \(used when creating a new model\) |
-| hint | _none_ | `String` | show this hint below the field |
-| help | _none_ | `String` | show this help if mouse hover the question icon before the caption of field. _You can use HTML elements too._ |
+| hint | _none_ | `String` | Show this hint below the field |
+| help | _none_ | `String` | Tooltip/Popover triggered by hovering over the question icon before the caption of field. _You can use HTML elements too._ |
 | [validator](/validation/README.md) | _none_ | `Function` or `Array` | Validator for value. It can be an array of functions too. |
 | [validateDebounceTime](/validation/README.md#debounced-validation) | _none_ | Amount of time in milliseconds validation waits before checking, refer to [validation](/validation/README.md#debounced-validation)
-| styleClasses | _none_ | `String` or `Array` | custom css style classes. They will be appended to the `.from-group` |
+| styleClasses | _none_ | `String` or `Array` | Custom CSS style classes. They will be appended to the `.from-group` |
 | [buttons](inside_buttons.md) | _none_ | `Array` | Array of button objects. This is useful if you need some helper function to fill the field. _\(E.g. generate password, get GPS location..etc\)\*_ |
+| [attributes](#custom-attributes) | _none_ | `Object` | [See below](#custom-attributes)
 
 ## Common methods of field
 
@@ -112,24 +113,13 @@ For fields [select](select.md), [checklist](checklist.md), [selectEx](selectex.m
 }
 ```
 
-## Custom properties
+## Custom Attributes
 
-You can add custom properties, such as `data-attributes`, to fields by using an `attributes` object. To add properties to the input field itself, simply specify the attribute names and values in the model:
-
-```javascript
-{
-  type: "input",
-  inputType: "text",
-  model: "first_name",
-  label: "First Name",
-  attributes: {
-    "data-toggle": "collapse",
-    "title": "Some Tooltip Title"
-  }
-}
-```
+You can add custom HTML Attributes, such as `data-attributes`, to fields by using an `attributes` object. 
 
 You can also specify the attributes of the surrounding wrapper and label:
+
+The attributes object is broken up into "wrapper", "input" and "label" objects which will attach attributes to the respective HTML element in the component.  All VFG Core fields support these, where applicable.
 
 ```javascript
 {
@@ -141,6 +131,21 @@ You can also specify the attributes of the surrounding wrapper and label:
     wrapper: { "data-toggle": "collapse" },
     input: { "data-toggle": "tooltip", "title": "Some Tooltip to be displayed by Bootstrap Tooltips" },
     label: { "custom-attr": "custom-value" }
+  }
+}
+```
+
+If you do not specify where the attributes go, and just provide a flat "attributes" property, then the attributes will be assigned to the "input" element on the component by default.
+
+```javascript
+{
+  type: "input",
+  inputType: "text",
+  model: "first_name",
+  label: "First Name",
+  attributes: {
+    "data-toggle": "collapse",
+    "title": "Some Tooltip Title"
   }
 }
 ```
