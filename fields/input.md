@@ -11,7 +11,7 @@ A single HTML field for all input type.
 
 Property   | Default  | Accepted values       | Description
 ---------- | -------- | --------------------- | -----------
-inputType  | _none_   | String                | Type of input field
+inputType  | _none_   | String                | Type of input field (ex. `text`, `tel`, `number`, `email`)
 
 See "attributes compatibility" at the end of this page.
 
