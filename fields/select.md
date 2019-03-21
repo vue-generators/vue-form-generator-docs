@@ -62,7 +62,7 @@ If you select the first item, the `value` will be `"Personal"` in the model.
 
 If you select the second item, the `value` will be `"en-US"` in the model.
 
-### Creating an \<optgroup\> with Select field:
+### Creating an `<optgroup>` with Select field:
 
 ```js
 {
