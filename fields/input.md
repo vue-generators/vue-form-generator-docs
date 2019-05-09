@@ -9,9 +9,11 @@ A single HTML field for all input type.
 
 ## Special properties of field
 
-Property   | Default  | Accepted values       | Description
----------- | -------- | --------------------- | -----------
-inputType  | _none_   | String                | Type of input field
+
+Property              | Default  | Accepted values       | Description
+--------------------- | -------- | --------------------- | -----------
+inputType             | _none_   | String                | Type of input field (ex. `text`, `tel`, `number`, `email`)
+debounceFormatTimeout | 1000     | Number                | Debounce time (ms) for non text input types (`number`, `range`, `date`,`datetime`, `datetime-local`)
 
 See "attributes compatibility" at the end of this page.
 
