@@ -11,10 +11,10 @@ Property 		| Type 			| Description
 --------------- | ------------- | -----------
 `max`             | `Number`      | Largest value that the slider can select.
 `min`             | `Number`      | Smallest value that the slider can select.
-`sliderOptions`   | `Object` 		| Settings of slider component. See details below.
+`noUiSliderOptions`   | `Object` 		| Settings of slider component. See details below.
 `values` 			| `Array` or `Function` 		| List of items. It can be an array with items, or a function, what is resulted an array. The item will be a `String` or an object with an `id` and a `name` properties.
 
-### `sliderOptions`
+### `noUiSliderOptions`
 
 For more details, see the official [noUiSlider documentation](http://refreshless.com/nouislider/slider-options/).
 
@@ -41,7 +41,7 @@ pips        | _none_         | `Object`                                         
   min: 0,
   max: 100,
   required: true,
-  sliderOptions: {
+  noUiSliderOptions: {
     connect: "lower",
   },
   validator: validators.required
@@ -57,7 +57,7 @@ pips        | _none_         | `Object`                                         
   min: 0,
   max: 140,
   required: true,
-  sliderOptions: {
+  noUiSliderOptions: {
     connect: "lower",
     step: 10,
     pips: {
@@ -84,7 +84,7 @@ pips        | _none_         | `Object`                                         
   label: "Vertical reversed non-linear slider with scale",
   model: "power",
   min: 0,
-  sliderOptions: {
+  noUiSliderOptions: {
     connect: "lower",
     orientation: 'vertical',
 	direction: 'rtl',
