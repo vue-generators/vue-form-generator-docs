@@ -32,7 +32,7 @@ There is only a few steps:
    ```js
     /* main.js */
     import Vue from "vue";
-    import VueFormGenerator from "VueFormGenerator";
+    import VueFormGenerator from "vue-form-generator";
 
     // Register my awesome field
     import fieldAwesome from "./fieldAwesome.vue";
