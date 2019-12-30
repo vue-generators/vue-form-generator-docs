@@ -1,6 +1,6 @@
 # Custom fields
 
-If you are not satisfied with the available field, you can create your own custom fields.  
+If you are not satisfied with the available field, you can create your own custom fields.
 There is only a few steps:
 
 1. These custom fields are like any custom components expect the need to use `VueFormGenerator.abstractField` as a mixins:
@@ -8,10 +8,10 @@ There is only a few steps:
    ```html
    <!-- fieldAwesome.vue -->
    <template>
-       <input 
-           class="form-control" 
-           type="text" 
-           v-model="value" 
+       <input
+           class="form-control"
+           type="text"
+           v-model="value"
            :disabled="disabled"
            :maxlength="schema.max"
            :placeholder="schema.placeholder"
@@ -19,7 +19,7 @@ There is only a few steps:
    </template>
 
    <script>
-      import { abstractField } from "VueFormGenerator";
+      import { abstractField } from "vue-form-generator";
 
       export default {
             mixins: [ abstractField ]
@@ -53,8 +53,8 @@ There is only a few steps:
    };
    ```
 
-If you decide to release your custom field into the wild, please [open a new issue](https://github.com/vue-generators/vue-form-generator/issues) so we can add you to a list on the README.  
-Please try to use this naming convention for your custom field : `vfg-field-*`  
+If you decide to release your custom field into the wild, please [open a new issue](https://github.com/vue-generators/vue-form-generator/issues) so we can add you to a list on the README.
+Please try to use this naming convention for your custom field : `vfg-field-*`
 Exemple :
 
 * `vfg-field-myfield`
