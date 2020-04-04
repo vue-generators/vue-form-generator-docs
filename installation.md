@@ -57,12 +57,12 @@ That way, it's your choice to depend on jQuery or not.
 
 | Field type | jQuery | Vanilla |
 | --- | --- | --- |
-| Address autocomplete | N/A | [googleAddress](googleaddress.md) |
-| Color picker | [spectrum](spectrum.md) | N/A |
-| Date picker | [datetime](datetime.md) | [pikaday](pikaday.md) |
-| Masked Input | [masked](masked.md) | [cleave](cleave.md) |
-| Multi Selection | [selectEx](selectex.md) | [vueMultiSelect](vuemultiselect.md) |
-| Slider | [slider](slider.md) | [noUiSlider](nouislider.md) |
+| Address autocomplete | N/A | [googleAddress](fields/googleaddress.md) |
+| Color picker | [spectrum](fields/spectrum.md) | N/A |
+| Date picker | [datetime](fields/datetime.md) | [pikaday](fields/pikaday.md) |
+| Masked Input | [masked](fields/masked.md) | [cleave](fields/cleave.md) |
+| Multi Selection | [selectEx](fields/selectex.md) | [vueMultiSelect](fields/vuemultiselect.md) |
+| Slider | [slider](fields/slider.md) | [noUiSlider](fields/nouislider.md) |
 
 You can find details about dependencies in each field page.
 
