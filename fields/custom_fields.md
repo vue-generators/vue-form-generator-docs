@@ -3,7 +3,7 @@
 If you are not satisfied with the available field, you can create your own custom fields.
 There is only a few steps:
 
-1. These custom fields are like any custom components expect the need to use `VueFormGenerator.abstractField` as a mixins:
+1. These custom fields are like any custom components except you need to use `VueFormGenerator.abstractField` as a mixin:
 
    ```html
    <!-- fieldAwesome.vue -->
@@ -27,7 +27,7 @@ There is only a few steps:
    </script>
    ```
 
-2. Register the new field as a global components. Registered name must validate this RegExp: `(field)[A-Z][A-z]*`.
+2. Register the new field as a global components. The registered name must validate this RegExp: `(field)[A-Z][A-z]*`.
 
    ```js
     /* main.js */
