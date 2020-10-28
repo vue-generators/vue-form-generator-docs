@@ -244,6 +244,7 @@ For more details, see the official [Vue-multiselect documentation](https://vue-m
   selectOptions: {
     multiple: true,
     key: "code",
+    trackBy: "code",
     label: "name",
     searchable: true,
     taggable: true,
