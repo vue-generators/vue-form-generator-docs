@@ -55,7 +55,7 @@ There is only a few steps:
 
 If you decide to release your custom field into the wild, please [open a new issue](https://github.com/vue-generators/vue-form-generator/issues) so we can add you to a list on the README.
 Please try to use this naming convention for your custom field : `vfg-field-*`
-Exemple :
+Example :
 
 * `vfg-field-myfield`
 * `vfg-field-calendar`
